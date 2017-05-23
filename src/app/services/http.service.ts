@@ -21,8 +21,10 @@ export class HttpService extends Http {
         options = {headers: new Headers()};
       }
       options.headers.set('Authorization', `Bearer ${this.token}`);
+      options.headers.set('Content-Type', `application/json`);
     } else {
       url.headers.set('Authorization', `Bearer ${this.token}`);
+      url.headers.set('Content-Type', `application/json`);
     }
     return super.request(url, options).catch(this.catchAuthError(this));
   }
@@ -43,7 +45,7 @@ export class HttpService extends Http {
   }
 
   post(url: string, body: any, options?: RequestOptionsArgs): Observable<Response> {
-    return super.post(url, body, new RequestOptions({ headers: this.headers }))
+    return super.post(url, body, options)
       .catch(this.handleError);
   }
 
