@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {any} from "codelyzer/util/function";
 
 @Component({
   selector: 'app-navbar',
@@ -11,5 +12,4 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

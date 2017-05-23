@@ -1,0 +1,21 @@
+a-scene {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+
+
+.crosshair {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 300;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  margin-left: -15px;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}

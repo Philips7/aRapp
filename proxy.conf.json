@@ -1,0 +1,9 @@
+{
+  "/api/*": {
+    "target": "https://stormy-ocean-60188.herokuapp.com/",
+    "changeOrigin": true,
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {"^/api" : ""}
+  }
+}

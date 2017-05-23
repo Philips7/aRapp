@@ -2,6 +2,7 @@
   position: fixed;
   left: 0;
   top: 0;
+  right: 0;
   .container {
     width: auto;
     height: 100vh;
@@ -15,6 +16,25 @@
   }
 
   .sidenav {
+    width: 235px;
     padding: 20px;
+
+    button {
+      margin-bottom: 30px;
+    }
   }
+
+  img {
+    width: 170px;
+    margin-bottom: 30px;
+  }
+  .menuButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  .active {
+    color: indigo;
+  }
+
 }
