@@ -13,29 +13,39 @@
           <md-icon md-list-icon>home</md-icon>
           <h3 md-line> Home </h3>
         </md-list-item>
-        <md-list-item routerLinkActive="active" [routerLink]="'/camera'" (click)="sidenav.close()">
+        <md-list-item routerLinkActive="active" [routerLink]="'/camera'" (click)="sidenav.close(); removeVideo();">
           <md-icon md-list-icon>camera</md-icon>
           <h3 md-line> Camera </h3>
         </md-list-item>
-        <md-list-item routerLinkActive="active" [routerLink]="'/settings'" (click)="sidenav.close()">
+        <md-list-item routerLinkActive="active" [routerLink]="'/settings'" (click)="sidenav.close(); removeVideo();">
           <md-icon md-list-icon>settings</md-icon>
           <h3 md-line> Settings </h3>
         </md-list-item>
+        <md-list-item routerLinkActive="active" [routerLink]="'/admin'" (click)="sidenav.close(); removeVideo();">
+          <md-icon md-list-icon>settings</md-icon>
+          <h3 md-line> Admin page </h3>
+        </md-list-item>
         <hr/>
-        <md-list-item routerLinkActive="active" [routerLink]="'/login'" (click)="sidenav.close()">
+        <md-list-item routerLinkActive="active" [routerLink]="'/login'" (click)="sidenav.close(); removeVideo();">
           <md-icon md-list-icon>account_circle</md-icon>
           <h3 md-line> Login </h3>
         </md-list-item>
-        <md-list-item (click)="sidenav.close()">
+        <md-list-item (click)="sidenav.close(); removeVideo();">
           <md-icon md-list-icon>account_circle</md-icon>
           <h3 md-line> Logout </h3>
         </md-list-item>
+        <div class="bottom">
+          <md-list-item routerLinkActive="active" [routerLink]="'/info'" (click)="sidenav.close(); removeVideo();">
+            <md-icon md-list-icon>info</md-icon>
+            <h3 md-line> About </h3>
+          </md-list-item>
+        </div>
       </md-list>
     </md-sidenav>
 
     <div class="content">
       <button class="menuButton" md-button (click)="sidenav.open()">
-        <md-icon md-list-icon>keyboard_arrow_right</md-icon>
+        <md-icon md-list-icon>menu</md-icon>
       </button>
       <router-outlet></router-outlet>
     </div>

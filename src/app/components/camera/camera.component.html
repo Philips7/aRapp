@@ -1,11 +1,18 @@
-<!--<a-scene artoolkit='sourceType: webcam' look-controls enabled="false">-->
-  <!--<a-entity position="0 1.8 4" >-->
-    <!--<a-cursor color="#4CC3D9"></a-cursor>-->
-  <!--</a-entity>-->
+<a-scene artoolkit='sourceType: webcam' look-controls enabled="false">
+  <a-entity position="0 1.8 4" >
+    <a-cursor color="#4CC3D9"></a-cursor>
+  </a-entity>
   <!--<a-marker *ngFor="let item of items$|async" type="barcode" [attr.value]="item.marker_number">-->
     <!--<a-obj-model [attr.src]="item.model" position="0 0 -3" scale="0.1 0.1 0.1" (click)="getRecognizedBarcode(item.id)"></a-obj-model>-->
   <!--</a-marker>-->
-<!--</a-scene>-->
+
+  <a-marker type="barcode" [attr.value]="13">
+    <a-box color="tomato" depth="2" height="2" width="2" position="0 0 -2" (click)="scannedCode('id')"></a-box>
+  </a-marker>
+  <a-marker type="barcode" [attr.value]="16">
+    <a-box color="red" depth="1" height="1" width="1" position="0 0 -2" (click)="scannedCode('id')"></a-box>
+  </a-marker>
+</a-scene>
 
 <div class="crosshair">
   <img src="../../../assets/images/crosshair.png">

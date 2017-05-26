@@ -8,8 +8,14 @@ import {any} from "codelyzer/util/function";
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  removeVideo() {
+    if (document.querySelector('video'))
+      document.querySelector('video').remove();
   }
 }

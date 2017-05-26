@@ -12,4 +12,8 @@ export class CameraComponent implements OnInit {
   ngOnInit() {
   }
 
+  scannedCode(id) {
+    console.log(id);
+  }
+
 }

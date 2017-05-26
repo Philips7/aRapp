@@ -1,3 +1,20 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 $color-primary: #673ab7;
+
+
+app-admin {
+  align-self: baseline;
+  width: 100%;
+  margin-top: 60px;
+
+  h1 {
+    margin-left: 20px;
+  }
+
+  .mat-mini-fab {
+    background-color: $color-primary;
+    color: white;
+  }
+}
+

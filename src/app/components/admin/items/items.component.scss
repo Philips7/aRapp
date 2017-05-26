@@ -1,0 +1,24 @@
+.ItemsComponent {
+  padding: 30px;
+
+  md-card {
+    padding: 0;
+    table {
+      margin-top: 30px;
+
+      .right {
+        width: 80px;
+      }
+
+      button:hover {
+        color: #673ab7;
+      }
+
+      tbody {
+        tr:hover {
+          background-color: #F0EDF8;
+        }
+      }
+    }
+  }
+}

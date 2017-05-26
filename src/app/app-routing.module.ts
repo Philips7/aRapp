@@ -4,6 +4,7 @@ import {WelcomeComponent} from "./components/welcome/welcome.component";
 import {CameraComponent} from "./components/camera/camera.component";
 import {LoginComponent} from "./components/login/login.component";
 import {SettingsComponent} from "./components/settings/settings.component";
+import {AdminComponent} from "./components/admin/admin.component";
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     path: 'settings', component: SettingsComponent
+  },
+  {
+    path: 'admin', component: AdminComponent
   }
 ];
 
