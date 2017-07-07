@@ -1,6 +1,6 @@
-# ARapp
+# ARapp 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+INFO: Frontend side of the application for argumented Reality. For more information check out documetation "Dokumentacja.pdf"
 
 ## Development server
 
